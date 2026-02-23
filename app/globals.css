@@ -132,6 +132,16 @@ th {
   cursor: pointer;
 }
 
+.formActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.userForm .dangerBtn {
+  background: #b42318;
+}
+
 .userForm button:disabled {
   opacity: 0.7;
   cursor: default;
