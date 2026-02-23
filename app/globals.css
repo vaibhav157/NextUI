@@ -13,6 +13,38 @@ body {
   color: #1d2433;
 }
 
+.topNav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  border-bottom: 1px solid #e7ecf4;
+}
+
+.topNavInner {
+  width: min(900px, 100%);
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navLink {
+  text-decoration: none;
+  font-weight: 600;
+  color: #1d2433;
+  border: 1px solid #d7deeb;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #fff;
+}
+
+.navLink:hover {
+  background: #f8fbff;
+  border-color: #c8d4ec;
+}
+
 .page {
   min-height: 100vh;
   padding: 40px 20px;
@@ -86,6 +118,11 @@ th {
   font-weight: 600;
 }
 
+.inactiveBadge {
+  background: #f1f5f9;
+  color: #475569;
+}
+
 .clickableRow {
   cursor: pointer;
 }
@@ -113,12 +150,17 @@ th {
   color: #44506b;
 }
 
-.userForm input {
+.userForm input,
+.userForm textarea {
   border: 1px solid #d7deeb;
   border-radius: 8px;
   padding: 10px 12px;
   font: inherit;
   color: #1d2433;
+}
+
+.userForm textarea {
+  resize: vertical;
 }
 
 .userForm button {
@@ -136,6 +178,18 @@ th {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+.checkboxLabel {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkboxLabel input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
 }
 
 .userForm .dangerBtn {
